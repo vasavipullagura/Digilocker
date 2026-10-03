@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VaultEdu | Student Digital Locker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     WELCOME PAGE
+===================================================== -->
+
+<section id="welcomePage" class="page active">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <span>Vault<span class="logo-highlight">Edu</span></span>
+        </div>
+
+        <button class="nav-login" onclick="showRegister()">
+            Get Started
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </nav>
+
+
+    <main class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                <i class="fa-solid fa-sparkles"></i>
+                Your documents. One secure place.
+            </div>
+
+            <h1>
+                Your Student Life,
+                <span>Safely Organized.</span>
+            </h1>
+
+            <p>
+                VaultEdu is your personal digital locker for storing,
+                managing and accessing important student documents
+                anytime, anywhere.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="showRegister()">
+                    Create My Locker
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button class="secondary-btn" onclick="showRegister()">
+                    <i class="fa-solid fa-play"></i>
+                    Explore Vault
+                </button>
+
+            </div>
+
+            <div class="trust-row">
+
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    Private
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    Organized
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    Easy Access
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="floating-card card-one">
+                <i class="fa-solid fa-file-lines"></i>
+                <div>
+                    <strong>Marks Memo</strong>
+                    <small>PDF • 2.4 MB</small>
+                </div>
+                <i class="fa-solid fa-circle-check check"></i>
+            </div>
+
+
+            <div class="locker-container">
+
+                <div class="locker-glow"></div>
+
+                <div class="locker">
+                    <div class="locker-top"></div>
+
+                    <div class="locker-door">
+
+                        <div class="locker-symbol">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div class="locker-title">
+                            VAULT
+                        </div>
+
+                        <div class="locker-lock">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-two">
+
+                <div class="mini-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div>
+                    <strong>Student Profile</strong>
+                    <small>Protected</small>
+                </div>
+
+                <i class="fa-solid fa-shield check"></i>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon blue">
+                <i class="fa-solid fa-folder-open"></i>
+            </div>
+
+            <div>
+                <h3>Everything Together</h3>
+                <p>Keep certificates, ID cards and academic files organized.</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <div class="feature-icon purple">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <div>
+                <h3>Student Privacy</h3>
+                <p>Your personal information stays inside your private locker.</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <div class="feature-icon green">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <div>
+                <h3>Quick Access</h3>
+                <p>Find important documents whenever you need them.</p>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+
+<!-- =====================================================
+     REGISTER PAGE
+===================================================== -->
+
+<section id="registerPage" class="page">
+
+    <div class="register-wrapper">
+
+        <div class="register-image">
+
+            <div class="image-overlay"></div>
+
+            <div class="register-image-content">
+
+                <div class="logo white-logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <span>Vault<span>Edu</span></span>
+                </div>
+
+                <div class="register-message">
+
+                    <span class="small-label">
+                        <i class="fa-solid fa-lock"></i>
+                        PRIVATE STUDENT SPACE
+                    </span>
+
+                    <h2>
+                        One locker.
+                        <br>
+                        Every important document.
+                    </h2>
+
+                    <p>
+                        Create your personal locker and keep your
+                        academic life beautifully organized.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="register-form-container">
+
+            <button class="back-button" onclick="showWelcome()">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </button>
+
+
+            <div class="register-form">
+
+                <div class="form-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <span class="small-label dark">
+                    CREATE YOUR LOCKER
+                </span>
+
+                <h1>
+                    Welcome to VaultEdu
+                </h1>
+
+                <p class="form-description">
+                    Enter your details to create your personal
+                    student digital locker.
+                </p>
+
+
+                <form id="registrationForm">
+
+                    <div class="input-group">
+
+                        <label for="studentName">
+                            Full Name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="studentEmail">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="studentEmail"
+                                placeholder="student@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="privacy-note">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+                            <strong>Your privacy matters</strong>
+
+                            <p>
+                                Your information is stored locally
+                                for this prototype.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <button class="create-btn" type="submit">
+
+                        Create My Digital Locker
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <p class="terms">
+                    By continuing, you agree to use VaultEdu
+                    responsibly and keep your account information secure.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section id="dashboardPage" class="page dashboard-page">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <span>
+                Vault<span class="logo-highlight">Edu</span>
+            </span>
+
+        </div>
+
+
+        <div class="profile-mini">
+
+            <div class="avatar" id="sidebarAvatar">
+                V
+            </div>
+
+            <div>
+
+                <strong id="sidebarName">
+                    Student
+                </strong>
+
+                <small id="sidebarEmail">
+                    student@email.com
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <nav class="side-navigation">
+
+            <button class="side-link active"
+                    onclick="showDashboardSection('overview', this)">
+
+                <i class="fa-solid fa-grid-2"></i>
+
+                Overview
+
+            </button>
+
+
+            <button class="side-link"
+                    onclick="showDashboardSection('documents', this)">
+
+                <i class="fa-solid fa-folder"></i>
+
+                My Documents
+
+                <span class="nav-count" id="documentCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button class="side-link"
+                    onclick="showDashboardSection('profile', this)">
+
+                <i class="fa-regular fa-user"></i>
+
+                Personal Info
+
+            </button>
+
+
+            <button class="side-link"
+                    onclick="showDashboardSection('security', this)">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                Privacy & Security
+
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="security-status">
+
+                <div class="status-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div>
+
+                    <strong>Locker Secure</strong>
+
+                    <small>
+                        Your space is private
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <button class="logout-btn" onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="dashboard-main">
+
+        <header class="dashboard-header">
+
+            <div class="mobile-logo">
+                <i class="fa-solid fa-shield-halved"></i>
+                VaultEdu
+            </div>
+
+            <div class="header-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your documents..."
+                    oninput="searchDocuments()"
+                >
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                    <span></span>
+                </button>
+
+                <div class="header-avatar" id="headerAvatar">
+                    V
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- OVERVIEW -->
+
+        <div id="overviewSection" class="dashboard-section">
+
+            <div class="welcome-dashboard">
+
+                <div>
+
+                    <span class="dashboard-label">
+                        YOUR PERSONAL LOCKER
+                    </span>
+
+                    <h1>
+                        Hello,
+                        <span id="welcomeName">
+                            Student
+                        </span>
+                        👋
+                    </h1>
+
+                    <p>
+                        Everything important for your student life,
+                        organized in one secure place.
+                    </p>
+
+                </div>
+
+
+                <button class="upload-btn"
+                        onclick="openUploadModal()">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    Upload Document
+
+                </button>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Total Documents</span>
+
+                        <strong id="totalDocuments">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Certificates</span>
+
+                        <strong id="certificateCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Storage Used</span>
+
+                        <strong id="storageUsed">
+                            0 KB
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+
+                        <span>Security</span>
+
+                        <strong>Protected</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <div class="documents-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>Recent Documents</h2>
+
+                            <p>
+                                Your recently added files
+                            </p>
+
+                        </div>
+
+                        <button onclick="showDashboardSection('documents')">
+                            View All
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div id="recentDocuments"
+                         class="documents-list">
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+
+                            <h3>Your locker is empty</h3>
+
+                            <p>
+                                Upload your first document to get started.
+                            </p>
+
+                            <button onclick="openUploadModal()">
+                                Upload Document
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <h2>Quick Actions</h2>
+
+                            <p>
+                                Manage your locker
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="quick-action"
+                            onclick="openUploadModal()">
+
+                        <div class="quick-icon blue">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+
+                        <div>
+                            <strong>Upload Document</strong>
+                            <small>Add a new file to your locker</small>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+
+                    <button class="quick-action"
+                            onclick="showDashboardSection('profile')">
+
+                        <div class="quick-icon purple">
+                            <i class="fa-solid fa-user-pen"></i>
+                        </div>
+
+                        <div>
+                            <strong>Update Profile</strong>
+                            <small>Manage your personal information</small>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+
+                    <button class="quick-action"
+                            onclick="showDashboardSection('security')">
+
+                        <div class="quick-icon green">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>Security Center</strong>
+                            <small>Check your privacy settings</small>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DOCUMENTS -->
+
+        <div id="documentsSection"
+             class="dashboard-section hidden-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="dashboard-label">
+                        YOUR FILES
+                    </span>
+
+                    <h1>My Documents</h1>
+
+                    <p>
+                        Manage all your academic and personal documents.
+                    </p>
+
+                </div>
+
+                <button class="upload-btn"
+                        onclick="openUploadModal()">
+
+                    <i class="fa-solid fa-plus"></i>
+                    Add Document
+
+                </button>
+
+            </div>
+
+
+            <div id="allDocuments"
+                 class="all-documents-grid">
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE -->
+
+        <div id="profileSection"
+             class="dashboard-section hidden-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="dashboard-label">
+                        YOUR INFORMATION
+                    </span>
+
+                    <h1>Personal Information</h1>
+
+                    <p>
+                        Your basic student profile.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-card">
+
+                <div class="profile-cover"></div>
+
+                <div class="profile-content">
+
+                    <div class="large-avatar"
+                         id="largeAvatar">
+                        V
+                    </div>
+
+                    <div class="profile-details">
+
+                        <h2 id="profileName">
+                            Student
+                        </h2>
+
+                        <p id="profileEmail">
+                            student@email.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+
+                        <span>Full Name</span>
+
+                        <strong id="infoName">
+                            Student
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>Email Address</span>
+
+                        <strong id="infoEmail">
+                            student@email.com
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>Account Type</span>
+
+                        <strong>
+                            Student
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <span>Locker Status</span>
+
+                        <strong class="secure-text">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Active & Secure
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SECURITY -->
+
+        <div id="securitySection"
+             class="dashboard-section hidden-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="dashboard-label">
+                        PROTECTION
+                    </span>
+
+                    <h1>Privacy & Security</h1>
+
+                    <p>
+                        Understand how your digital locker is protected.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="security-grid">
+
+                <div class="security-card main-security">
+
+                    <div class="big-security-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h2>Your Locker is Private</h2>
+
+                    <p>
+                        VaultEdu is designed around student privacy.
+                        Your locker is intended to be accessible only
+                        to you.
+                    </p>
+
+                    <div class="security-status-large">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <div>
+                            <strong>Protection Active</strong>
+                            <span>Your locker is secured</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="security-card">
+
+                    <div class="security-card-icon">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+
+                    <h3>Private Profile</h3>
+
+                    <p>
+                        Your personal information is separated from
+                        your document collection.
+                    </p>
+
+                </div>
+
+
+                <div class="security-card">
+
+                    <div class="security-card-icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <h3>Protected Documents</h3>
+
+                    <p>
+                        Your uploaded documents are displayed only
+                        inside your personal locker.
+                    </p>
+
+                </div>
+
+
+                <div class="security-card">
+
+                    <div class="security-card-icon">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+
+                    <h3>Privacy First</h3>
+
+                    <p>
+                        This prototype keeps your data in your browser
+                        using local storage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     UPLOAD MODAL
+===================================================== -->
+
+<div id="uploadModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="modal-close"
+                onclick="closeUploadModal()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+
+        <h2>Upload Document</h2>
+
+        <p>
+            Add an important document to your personal locker.
+        </p>
+
+
+        <div class="upload-area"
+             onclick="document.getElementById('fileInput').click()">
+
+            <i class="fa-solid fa-file-arrow-up"></i>
+
+            <strong>
+                Choose a file
+            </strong>
+
+            <span>
+                PDF, JPG, PNG or DOCX
+            </span>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                onchange="fileSelected(this)"
+            >
+
+        </div>
+
+
+        <div id="selectedFile"
+             class="selected-file hidden">
+
+            <i class="fa-solid fa-file"></i>
+
+            <span id="selectedFileName">
+                File
+            </span>
+
+        </div>
+
+
+        <div class="input-group modal-input">
+
+            <label>
+                Document Name
+            </label>
+
+            <div class="input-wrapper">
+
+                <i class="fa-regular fa-file"></i>
+
+                <input
+                    type="text"
+                    id="documentName"
+                    placeholder="Example: Semester 1 Marks Memo"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="input-group modal-input">
+
+            <label>
+                Category
+            </label>
+
+            <div class="input-wrapper">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <select id="documentCategory">
+
+                    <option value="Academic">
+                        Academic
+                    </option>
+
+                    <option value="Certificate">
+                        Certificate
+                    </option>
+
+                    <option value="Identity">
+                        Identity
+                    </option>
+
+                    <option value="Personal">
+                        Personal
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <button class="create-btn"
+                onclick="addDocument()">
+
+            Save to My Locker
+
+            <i class="fa-solid fa-lock"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div id="toast" class="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Success
+    </span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
